@@ -75,9 +75,9 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
+	'hostname' => '/Applications/MAMP/tmp/mysql/mysql.sock',
 	'username' => 'root',
-	'password' => 'cladteksql',
+	'password' => 'root',
 	'database' => 'perdana',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',

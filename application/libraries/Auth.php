@@ -16,7 +16,7 @@ class Auth {
 
     function __construct(){
         $this->CI =& get_instance();
-        $this->CI->load->database('default', TRUE);
+        isset($this->CI->db) OR $this->CI->load->database();
         $this->CI->load->library('session');
 
         if($this->isLogin()) {
